@@ -18,23 +18,34 @@
         <div class="name">陳建毅</div>
         <div class="text-center">
             <div class="introduce">
-                &emsp;&emsp;您好，我是陳建毅，個性樂觀、正面、待人和善、富有想像力及好奇心，遇到工作困難積極尋找解決方法，喜歡學習新的事物，尤以學習新的程式語言、新的前/後端技術更為感興趣，且以實際行動持續精進網頁開發技術。
+                &emsp;&emsp;您好，我是陳建毅，個性樂觀、正面、待人和善、富有想像力及好奇心，遇到工作問題及困難積極尋找解決方法，喜歡學習新的事物，尤以學習新的程式語言、新的前/後端技術更為感興趣，且以實際行動持續精進網頁開發技術。
             </div>
         </div>
         <div class="text-center">
             <i class="gg-comment"></i>
             <div class="technology">
-                    <div class="s_title">
-                        技能 
-                    </div>
-                    開發技術：&emsp;Html、Github<br>
-                    程式語言：&emsp;Css、Javascript<br>
-                    FrameWork：&emsp;Vue3<br>
-                    UI Toolkit：&emsp;Bootstrap 5<br>
-                    Webpack：&emsp;Vue CLI<br>
-                    Backend：&emsp;Firebase 9<br>
-                    Database：&emsp;Cloud Firestore<br>
-                    API 串接：&emsp;GNews API<br>
+                <div class="s_title">
+                    技能 
+                </div>
+                開發技術：&emsp;Html、Github<br>
+                程式語言：&emsp;Css、Javascript<br>
+                FrameWork：&emsp;Vue3<br>
+                UI Toolkit：&emsp;Bootstrap 5<br>
+                Webpack：&emsp;Vue CLI<br>
+                Backend：&emsp;Firebase 9<br>
+                Database：&emsp;Cloud Firestore<br>
+                API 串接：&emsp;GNews API<br>
+            </div>
+        </div>
+        <div class="text-center">
+            <i class="gg-phone"></i>
+            <div class="technology">
+                <div class="s_title">
+                    聯絡方式 
+                </div>
+                手機：&emsp;0938198523<br>
+                Line：&emsp;<a class="add_Line" href="https://line.me/ti/p/VKwAR5YpNT">0938198523 (按此加Line)</a><br>
+                E-mail：&emsp;a0938198523@gmail.com<br>                
             </div>
         </div>
         <div class="text-center">
@@ -78,6 +89,16 @@
 </body>
 </html>
 <style>
+    .add_Line{
+        color:bisque ;
+        text-decoration: none;
+    }
+    .add_Line:hover{
+        color:rgb(226, 168, 98) ;
+    }
+    .add_Line:active{
+        color:rgb(248, 136, 0) ;
+    }
     body{
         margin: 0;
         padding: 0;
@@ -168,14 +189,11 @@
         width: 220px;
         height: 220px;
         border-radius: 50%;
-        animation:head_border .005s linear 0s infinite alternate;
+        animation:head_border .005s linear 0s 1;
         box-sizing:border-box;
         border: 3px rgb(80, 124, 211) solid;
-    }
-    .head_img:hover{
-        animation:turn_run 1s linear 0s 1 alternate;
-    }
 
+    }
     .title{
         text-align: center;
         font-size: 40px;
@@ -239,6 +257,59 @@
             transform: rotateY(360deg);
         }
     }
+     .gg-phone {
+ box-sizing: border-box;
+ position: relative;
+ display: block;
+ width: 22px;
+ height: 22px;
+ transform: scale(var(--ggs,1));
+ margin-right: 20px;
+}
+
+.gg-phone::after,
+.gg-phone::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute
+}
+
+.gg-phone::after {
+ width: 18px;
+ height: 18px;
+ border-top-left-radius: 1px;
+ border-bottom-right-radius: 1px;
+ border-bottom-left-radius: 12px;
+ border-left: 4px solid;
+ border-bottom: 4px solid;
+ left: 2px;
+ bottom: 2px;
+ background:
+ linear-gradient(
+ to left,
+ currentColor 10px,
+ transparent 0
+ ) no-repeat right 11px/6px 4px,
+ linear-gradient(
+ to left,
+ currentColor 10px,
+ transparent 0
+ ) no-repeat -1px 0/4px 6px
+}
+
+.gg-phone::before {
+ width: 20px;
+ height: 20px;
+ border: 6px double;
+ border-top-color: transparent;
+ border-bottom-color: transparent;
+ border-left-color: transparent;
+ border-radius: 50%;
+ transform: rotate(-45deg);
+ bottom: 2px;
+ left: 2px
+} 
 </style>
 <script>
     function pages(page){
